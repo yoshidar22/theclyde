@@ -1,0 +1,96 @@
+@import url(common.css);
+
+/* -----メイン----- */
+main article section {
+  border: 2px solid #4a4a4a;
+  margin-top: 67px;
+}
+
+main section.wine {
+  margin-bottom: 67px;
+}
+
+main article section p.menu {
+  margin-top: 44px;
+  margin-bottom: 22px;
+}
+
+main article section h2 {
+  color: #54410c;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 47px;
+  margin-bottom: 23px;
+}
+
+main article section p.text {
+  color: #1d1502;
+  font-size: 18px;
+  text-align: left;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+
+main article section p.price {
+  color: #54410c;
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+
+/* リンクボタン */
+main section p.linkbtn a {
+  font-size: 18px;
+  background-color: #6b5311;
+  color: #ffffff;
+  display: block;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
+  background-image: url(../img/rightarrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+  margin-bottom: 44px;
+}
+
+main section p.linkbtn a:hover {
+  opacity: 0.7;
+}
+
+/* FlexBox */
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+main div section {
+  flex-basis: 47%;
+}
+
+/* タブレット */
+@media (max-width: 991px) {
+  main div {
+    display: block;
+  }
+
+  main article div section {
+    padding-top: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  main article section p.menu {
+    margin-top: unset;
+  }
+
+  main article section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ Document</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body id="#top">
+  <header>
+    <h1><a href="index.html"><img src="img/mainicon.png" alt="お店のマーク"></a></h1>
+  </header>
+  <!-- ハンバーガーメニュー -->
+  <button class="hmenu"><span></span></button>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#">ストーリー</a></li>
+      <li><a href="menu.html">メニュー</a></li>
+      <li><a href="#">イベント</a></li>
+      <li class="active"><a href="contact.html">お問い合わせ</a></li>
+      <li class="inner"><a href="#">ご予約</a></li>
+      <li><a href="#">ブログ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h1>お問い合わせ</h1>
+      <form action="https://ssl.form-mailer.jp/fm/service/Forms/complete" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+        <input type="hidden" name="key" value="afc0fcee835268">
+        <div class="contact">
+          <div>
+            <fieldset>
+              <legend>お名前*</legend>
+              <p><input type="text" name="field_7303810" required></p>
+            </fieldset>
+            <fieldset>
+              <legend>メールアドレス*</legend>
+              <p><input type="email" name="field_7303805" required></p>
+            </fieldset>
+            <fieldset>
+              <legend>お電話番号</legend>
+              <p><input type="tel" name="field_7303811"></p>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>お問い合わせ内容*</legend>
+              <p><textarea name="field_7303812" required></textarea></p>
+            </fieldset>
+          </div>
+        </div>
+        <aside>
+          <p>*は必須項目です。</p>
+        </aside>
+        <p><button>送信</button></p>
+        <input type="hidden" name="code" value="utf8">
+      </form>
+      <aside class="privacy">
+        <h2>個人情報保護方針</h2>
+        <p>弊社のウェブサイトでご登録いただいた個人情報につきましては、社内で厳重に管理し、ご連絡目的以外での使用は一切いたしません。</p>
+      </aside>
+    </article>
+
+    <aside>
+      <p class="reservation"><a href="#"><img src="img/reservation.png" alt="予約ボタン"></a></p>
+    </aside>
+  </main>
+
+
+  <footer>
+    <section>
+      <h3>営業時間</h3>
+      <p>6時〜23時（午後11時）</p>
+    </section>
+    <div class="contents">
+      <p><img src="img/footermainicon.png" alt="お店のマーク"></p>
+      <p><img src="img/maps.png" alt="お店のマップ画像"></p>
+    </div>
+    <address>
+      <img src="img/map_icon.png" alt="マップのマーク">東京都港区赤坂xx-xx<br>
+      <img src="img/tel_icon.png" alt="電話のマーク">(03) 9999-99<br>
+      <img src="img/email_icon.png" alt="メールのマーク">contact@theclyde.com
+    </address>
+    <p class="inner"><small>&copy;2016 THE CLYDE.<span> ALL RIGHTS RESERVED.</span></small></p>
+    <p class="pagetop"><a href="#top"><img src="img/pagetop.svg" width="50" height="50" alt="ページトップへ"></a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
